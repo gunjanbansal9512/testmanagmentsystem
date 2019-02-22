@@ -70,3 +70,49 @@ background-color:white;
     a{
         color: white;
     }
+    
+    .selectsem
+    {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
+    margin: 50px auto 0;
+    text-align: center
+    }
+
+    .view
+    {
+        font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+    
+}
+      
+    .usn
+    {
+        height: 20px;
+    position: relative;
+    border: 2px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .14);
+    background-color: AliceBlue;
+    font-size: 14px;
+    }
+    .selectop
+    {
+        color: white;
+        background-color: #282726;
+        border-radius: 1.5rem;
+    }
+    .selectmar
+    {
+        color: white;
+        background-color: #282726;
+        border-radius: 1.5rem;
+    }

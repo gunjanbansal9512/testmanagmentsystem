@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/bootstrap-grid.css">
         <link rel="stylesheet" href="css/colors.css">
         <link rel="stylesheet" href="style.css">
-        
+      
 
     </head>
     <body>
@@ -22,44 +22,35 @@
              Test Managment System
             </span>
           </nav>
-          <div class="container">
-                <div class="row">
-                        <div class="col-md-6">
-                           <br/>
-
-                            <div class="buttons">
-                                <a href=""> I Semester</a>
-                               </div>   
-                               <br/>
-
-                               <div class="buttons">
-                                   <a href=""> II Semester</a>
-                                  </div>   
-                                  <br/>
-
-                                  <div class="buttons">
-                                      <a href=""> III Semester</a>
-                                     </div>   
-                                     <br/>
-
-                                     <div class="buttons">
-                                         <a href=""> IV Semester</a>
-                                        </div>   
-                                        <br/>
-
-                                        <div class="buttons">
-                                            <a href=""> V Semester</a>
-                                           </div>   
-                                           <br/>
-
-                                           <div class="buttons">
-                                               <a href=""> VI Semester</a>
-                                              </div>   
-                        </div>
-                </div>
-
-
-          </div>
+          <div class="container selectsem ">
+          <form action="" >
+          <select  class="selectop">
+                <option value="sem1">Semester 1</option>
+                <option value="sem2">Semester 2</option>
+                <option value="sem3">Semester 3</option>
+                <option value="sem4">Semester 4</option>
+                <option value="sem5">Semester 5</option>
+                <option value="sem6">Semester 6</option>
+                
+              </select>
+              <br/>
+              <br/>
+              <select  class="selectmar">
+                    <option value="ia1">IA1</option>
+                    <option value="ia2">IA2</option>
+                    <option value="ia3">IA3</option>
+                    <option value="fa">Final Marks</option>
+                  
+                    
+                  </select>
+              <br/>
+              <br/>
+              <input type="text" placeholder="Enter Usn" class="usn">
+              <br/>
+              <br/>
+              <input type="submit" value="View" class="view">
+            </form>
+        </div>
           <script src="js/jquery-3.3.1.min.js" ></script>
        
         <script src="js/bootstrap.min.js"></script>
