@@ -1,0 +1,1 @@
+CREATE TABLE `tms`.`student` ( `usn` VARCHAR(10) NULL , `name` VARCHAR(80) NULL , `sem` INT NOT NULL , `email` VARCHAR(500) NOT NULL , `phno` BIGINT(14) NOT NULL , `year` YEAR NOT NULL , PRIMARY KEY (`usn`)) ENGINE = InnoDB;

@@ -1,0 +1,25 @@
+ <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="style.css">
+    //Top bar
+    <nav class="navbar navbar-light bg-black">
+        <span class="navbar-text" style="color:white  ;margin: 0 auto; text-align: center;">
+         Test Managment System
+        </span>
+      </nav>
+      //side bar
+      <nav class="navigation">
+        <ul class="mainmenu">
+          <li><a href="hodlogin.html">Home</a></li>
+          <li><a href="">Add Faculty</a></li>
+          <li><a href="">Add Student</a>
+
+          </li>
+          <li><a href="">View Marks</a></li>
+          <li><a href="">Generate Report</a></li>
+        </ul>
+      </nav>
+         <script src="js/jquery-3.3.1.min.js" ></script>
+       
+        <script src="js/bootstrap.min.js"></script>
