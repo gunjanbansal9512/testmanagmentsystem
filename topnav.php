@@ -17,11 +17,11 @@
          Test Managment System
         </h2>
        <?php session_start();
-       echo "<p> $_SESSION[login_user]</p>";
+       echo "<p> $_SESSION[login_name]</p>";
         ?>
       </nav>
       <script src="js/jquery-3.3.1.min.js" ></script>
-       
+
        <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@
 if(isset($_POST['change']))
 {
     include("connection.php");
-    $q="select password from faculty where fid='$_SESSION[login_user]'";
+    $q="select password from hod where hid='$_SESSION[login_user]'";
     if($result=mysqli_query($con,$q))
     {
       $row=mysqli_fetch_array($result);
@@ -45,7 +45,7 @@ if(isset($_POST['change']))
       {
         $n=$_POST['new'];
         $i=$_SESSION['login_user'];
-        mysqli_query($con,"update faculty set password='$n' where fid='$i'");
+        mysqli_query($con,"update hod set password='$n' where hid='$i'");
         ?>
         <div class="alert alert-info"  data-dismiss="alert" aria-label="close">
             <strong>Info!</strong> Password Sucesfully Changed...

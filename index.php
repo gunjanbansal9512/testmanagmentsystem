@@ -100,10 +100,12 @@
 
       if($count == 1) {
 
-        $sql = "SELECT name FROM hod WHERE hid = '$myusername' and password = '$mypassword'";
+        $sql = "SELECT hid,name FROM hod WHERE hid = '$myusername' and password = '$mypassword'";
         $result = mysqli_query($con,$sql);
         $row = mysqli_fetch_array($result);
-         $_SESSION['login_user'] = $row['name'] ;
+         $_SESSION['login_user'] = $row['hid'] ;
+         $_SESSION['login_name']=$row['name'];
+
     //    echo $count;
          header("location: hodlogin.php");
         // session_register("hod");
@@ -118,7 +120,7 @@ if(isset($_POST['teacher'])==true)
     $myusername = $_POST['fid'];
     $mypassword =$_POST['pass'];
 
-    $sql = "SELECT fid FROM faculty WHERE fid = '$myusername' and password = '$mypassword'";
+    $sql = "SELECT fid,fname FROM faculty WHERE fid = '$myusername' and password = '$mypassword'";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_array($result);
    // $active = $row['name'];
@@ -133,7 +135,7 @@ if(isset($_POST['teacher'])==true)
       $result = mysqli_query($con,$sql);
       $row = mysqli_fetch_array($result);
        $_SESSION['login_user'] = $row['fid'] ;
-       $_SESSION['login_name']=$row['name'];
+       $_SESSION['login_name']=$row['fname'];
   //    echo $count;
        header("location: teacherlogin.php");
        session_register("teacher");

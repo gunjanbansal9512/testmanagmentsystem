@@ -17,7 +17,7 @@
         <ul class="mainmenu">
           <li><a href="hodlogin.php">Home</a></li>
           <li><a href="addfaculty.php">Add Faculty</a></li>
-      
+
           <li><a href="viewmarks.php" >Gereate Report</a>
           <ul class="submenu">
           <li><a href="">Subject Wise</a></li>
@@ -26,7 +26,7 @@
           </ul>
         </li>
         <li><a href="upload.php">Upload Papers</a></li>
-          <li><a href="editprofile.php">Edit Profile</a></li>
+          <li><a href="hodedit.php">Edit Profile</a></li>
           <li><a href="signout.php">Signout</a></li>
         </ul>
       </nav>
