@@ -13,21 +13,22 @@
 </head>
 <body>
 
-<nav class="navigation">
+<nav class="nav flex-column navigation">
         <ul class="mainmenu">
-          <li><a href="hodlogin.php">Home</a></li>
-          <li><a href="addfaculty.php">Add Faculty</a></li>
+          <li class="nav-item"><a href="hodlogin.php">Home</a></li>
+          <li class="nav-item"><a href="addfaculty.php">Add Faculty</a></li>
 
-          <li><a href="viewmarks.php" >Gereate Report</a>
-          <ul class="submenu">
-          <li><a href="">Subject Wise</a></li>
-          <li><a href="">Semester Wise</a></li>
+          <li class="nav-item"><a href="viewmarks.php" >View Marks</a>
+          <ul class="submenu ">
+          <li class="nav-item"><a href="">Subject Wise</a></li>
+          <li class="nav-item"><a href="">Semester Wise</a></li>
 
           </ul>
         </li>
-        <li><a href="upload.php">Upload Papers</a></li>
-          <li><a href="hodedit.php">Edit Profile</a></li>
-          <li><a href="signout.php">Signout</a></li>
+        <li class="nav-item"><a href="upload_student_sol.php">Upload Student Solutions </a></li>
+        <li class="nav-item"><a href="upload.php">Upload Papers</a></li>
+          <li class="nav-item"><a href="hodedit.php">Edit Profile</a></li>
+          <li class="nav-item"><a href="signout.php">Signout</a></li>
         </ul>
       </nav>
       <script src="js/jquery-3.3.1.min.js" ></script>

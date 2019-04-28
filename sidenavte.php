@@ -17,7 +17,7 @@
         <ul class="mainmenu">
           <li><a href="teacherlogin.php">Home</a></li>
 
-          <li><a href="uploadmarks.php">Upload Marks</a>
+          <li><a href="uploadmarksinfo.php">Upload Marks</a>
 
           </li>
           <li><a href="addstd.php">Add Student</a>
@@ -26,7 +26,7 @@
           <li><a href="viewqp.php" >View Papers</a>
 
         </li>
-          <li><a href="">Generate Final Marks</a></li>
+          <li><a href="generatemarks.php">Generate Final Marks</a></li>
           <li><a href="editprofile.php">Edit Profile</a></li>
           <li><a href="signout.php">Logout</a></li>
         </ul>

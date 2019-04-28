@@ -17,7 +17,7 @@
          Test Managment System
         </h2>
        <?php session_start();
-       echo "<p> $_SESSION[login_name]</p>";
+       echo "<h5 style='color:black; font-style: oblique;'>Welcome, $_SESSION[login_name]</h5>";
         ?>
       </nav>
       <script src="js/jquery-3.3.1.min.js" ></script>

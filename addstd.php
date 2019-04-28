@@ -22,7 +22,9 @@ include("sidenavte.php");
 
 
 					<input class="text" type="email" name="email" placeholder="Email Id" required="">
-                    <input class="text" type="number" name="phno" placeholder="Ph no" required="">
+                    <input class="text" type="number" name="phno" placeholder="Ph no" required=""  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number"
+    maxlength = "10">
 					<input class="text" type="number" name="join" placeholder="Joining Year" required="">
 
                     <br/>
@@ -38,18 +40,26 @@ if(isset($_POST['submit']))
     $e=$_POST['email'];
     $p=$_POST['phno'];
     $j=$_POST['join'];
-$row=mysqli_query($con,"select classt from faculty where fid='vinita123'");
+    $id=$_SESSION['login_user'];
+$row=mysqli_query($con,"select classt from faculty where fid='$id'");
 if($result=mysqli_fetch_array($row))
 {
   $s=$result['classt'];
-  if($s>=1)
+  if($s==0)
   {
-    mysqli_query($con,"INSERT INTO `student` (`usn`, `name`, `sem`, `phno`, `email`, `year`) VALUES ('$u', '$n', '$s', '$p', '$e', '$j')");
-  }
+?>
+<div class="alert alert-info"  data-dismiss="alert" aria-label="close">
+    <strong>Info!</strong> Sorry Only Class Teacher's Can Add Students.
+  </div>
+  <?php }
+
   else {
-    ?>
-    <script>alert("You cant add student");</script>
-    <?php
+
+    mysqli_query($con,"INSERT INTO `student` (`usn`, `name`, `sem`, `phno`, `email`, `year`) VALUES ('$u', '$n', '$s', '$p', '$e', '$j')");
+mysqli_query($con,"INSERT INTO `ia1` (`usn`, `name`) VALUES ('$u', '$n')");
+mysqli_query($con,"INSERT INTO `ia2` (`usn`, `name`) VALUES ('$u', '$n')");
+mysqli_query($con,"INSERT INTO `ia3` (`usn`, `name`) VALUES ('$u', '$n')");
+mysqli_query($con,"INSERT INTO `fa` (`usn`, `name`) VALUES ('$u', '$n')");
   }
 }
 

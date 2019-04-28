@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php include("topnav.php");
-    include("sidenav.php");
+    include("sidenavte.php");
     include("validate.php");
     ?>
 
